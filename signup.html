@@ -1,0 +1,83 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SIGNup</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <style>
+        body{
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            font-family: 'poppins', Arial, Helvetica, sans-serif;
+        }
+        .signele {
+            padding: 40px;
+            margin-top: 100px;
+            border: 1px solid black;
+            border-radius: 10px;
+            width: 20%;
+            background-color: #fbf7f6;
+        }
+        input {
+            width: 50%;
+            padding: 5px;
+            border: none;
+            background-color: #fbf7f6;
+            font-size: 15px;
+            border-bottom: 2px solid black;
+        }
+        input:focus {
+            outline: none;
+        }
+        .box{
+            margin-right: 10px;
+            width: 20px;
+            height: 20px;
+        }
+        button {
+            font-family: 'poppins', Arial, Helvetica, sans-serif;
+            padding: 5px;
+            border-radius: 5px;
+            border: 1px solid black;
+            background-color: #ff5500;
+            color: white;
+        }
+        a{
+            text-decoration: none;
+            color: white;
+        }
+        p{
+            margin-right: 10px;
+        }
+        h1{
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+    <div class="signele">
+        <h1>Sign Up</h1>
+        <form action="signin" method="post">
+            <p>Email: </p>
+            <input required>
+            <br>
+            <p>Username: </p>
+            <input required>
+            <br>
+            <p>Password: </p>
+            <input required>
+            <br>
+            <br>
+            <input class="box" type="checkbox" name="terms" id="terms" required>
+            <label for="terms">I agree to the terms and conditions</label>
+            <br>
+            <br>
+            <button><a href="#">Sign Up</a></button>
+        </form>
+    </div>
+</body>
+</html>
